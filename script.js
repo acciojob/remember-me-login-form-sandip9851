@@ -3,6 +3,7 @@ window.onload = function() {
   const pwd = document.querySelector("#password");
   const name = document.querySelector("#username");
   const checkBox = document.querySelector("#checkbox");
+const newButton = document.querySelector("#existing");
 
   class details {
     constructor(name,password){
@@ -40,10 +41,8 @@ window.onload = function() {
   let rawData = JSON.parse(getDetails);
 
   if(rawData) {
-    let newButton = document.createElement("button");
-    newButton.innerText = "Login as existing user"
-    newButton.id = "existing"
-    document.body.append(newButton)
+    
+    
 
     newButton.addEventListener("click",(eve)=>{
       eve.preventDefault();
