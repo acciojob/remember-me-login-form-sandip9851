@@ -1,2 +1,23 @@
 /*  your css code here. If applicable */ 
+.form{
+
+	display:flex;
+
+	flex-direction:column;
+
+	gap:1em;
+
+	align-items:flex-start;
+
+}
+
+.input-container{
+
+	display:flex;
+
+	align-items:center;
+
+	gap:0.5em;
+
+}
 
