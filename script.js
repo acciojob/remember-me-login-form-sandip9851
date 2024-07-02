@@ -46,7 +46,7 @@ const newButton = document.querySelector("#existing");
 
     newButton.addEventListener("click",(eve)=>{
       eve.preventDefault();
-      alert(`Logged in as ${rawData.name}`)
+      alert(`Logged in as ${name.value}`)
     })
   }
 }
