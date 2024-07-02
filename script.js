@@ -31,7 +31,7 @@ function saveData(eve) {
 					 name.parentElement.append(newButton)
 			newButton.addEventListener("click",(eve)=>{
 				eve.preventDefault();
-		alert(`Logged in as ${name.value}`)
+		alert(`Logged in as ${rawData.value}`)
 			})
 
 						return;
