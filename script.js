@@ -3,6 +3,9 @@ const pwd = document.querySelector("#password");
 const name = document.querySelector("#username");
 const checkBox = document.querySelector("#checkbox");
 
+const newButton = document.querySelector("#existing");
+newButton.style.display = "none"
+
 class details {
 	constructor(name,pasword){
 		this.name = name
@@ -24,14 +27,12 @@ function saveData(eve) {
 
         if (rawData && name.value === rawData.name) {
 			 alert(`You are an existing user`);
-           let newButton = document.createElement("button");
+          newButton.style.display = "block"
 			
-					 newButton.innerText = "Login as existing user"
-					 newButton.id = "existing"
-					 name.parentElement.append(newButton)
+					 
 			newButton.addEventListener("click",(eve)=>{
 				eve.preventDefault();
-		alert(`Logged in as ${rawData.value}`)
+		alert(`Logged in as ${rawData.name}`)
 			})
 
 						return;
